@@ -40,16 +40,16 @@
     body::before { top:0; height:120px; background: linear-gradient(to bottom, rgba(0,0,0,.6), transparent); }
     body::after { bottom:0; height:160px; background: linear-gradient(to top, rgba(0,0,0,.7), transparent); }
 
-    /* Logo: usa a imagem como fundo, ajustada para caber inteira no círculo */
+    /* Logo: ajustes finos para centralizar a logo dentro do PNG */
     .logo-circle {
       width: clamp(180px, 50vw, 220px);
       aspect-ratio: 1;
       border-radius: 50%;
       background-image: url('logo.png');
-      background-size: 130% auto;        /* tamanho da logo dentro do círculo */
-      background-position: center 60%;   /* posição vertical (60% = um pouco para baixo) */
+      background-size: 165% auto;        /* logo um pouco ampliada */
+      background-position: 45% 35%;      /* puxa para a esquerda + sobe (compensa descentralização do PNG) */
       background-repeat: no-repeat;
-      background-color: #f5f1ea;          /* fundo creme do círculo */
+      background-color: #f5f1ea;
       box-shadow:
         0 0 0 4px rgba(254,243,199,.15),
         0 0 0 6px rgba(254,243,199,.08),
